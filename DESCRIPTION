@@ -1,0 +1,14 @@
+Package: data.table.tools
+Title: Extensions and utilities for data.tables
+Version: 0.1
+Date: 2015-01-15
+Authors@R: "Christopher Brown <chris.brown@decisionpattenrs.com> [aut, cre]"
+Description: Useful utilities for working with data.tables
+Depends:
+    R (>= 3.1.0),
+    data.table (>= 1.9.4)
+License: Decision Patterns Client License
+LazyData: true
+Suggests:
+    testthat,
+    magrittr
