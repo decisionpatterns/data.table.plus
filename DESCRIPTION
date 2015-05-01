@@ -9,7 +9,7 @@ Depends:
     data.table (>= 1.9.4)
 License: Decision Patterns Client License
 Imports:
-    dplyr (>= 0.4.1)
+    dplyr 
 LazyData: true
 Suggests:
     testthat,
