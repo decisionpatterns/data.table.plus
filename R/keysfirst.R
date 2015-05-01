@@ -16,8 +16,7 @@
 #'     dt %>% setcolorder( keysfirst(dt))
 #'   }
 #'
-#' @import
-#'   data.table
+# @import data.table
 #'
 #' @export
 

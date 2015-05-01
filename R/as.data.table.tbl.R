@@ -1,6 +1,7 @@
 #' Convert a dplyr table to a data.table by stripping the dplyr classes
 #'
 #' @param x dplyr tbl object
+#' @param keep.rownames logical; unused but kepy to match as.data.table generic
 #'
 #' @import dplyr
 #' @export

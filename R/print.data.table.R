@@ -17,7 +17,7 @@
 #'   setkey(iris, Species )
 #'   print(iris)
 #'
-#' @import data.table
+# @import data.table
 #' @export
 
 print.data.table <- function( x, ... ) {

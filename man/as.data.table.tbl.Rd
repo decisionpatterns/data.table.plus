@@ -8,6 +8,8 @@
 }
 \arguments{
 \item{x}{dplyr tbl object}
+
+\item{keep.rownames}{logical; unused but kepy to match as.data.table generic}
 }
 \description{
 Convert a dplyr table to a data.table by stripping the dplyr classes

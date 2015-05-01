@@ -2,9 +2,11 @@
 
 S3method(as.data.table,tbl)
 S3method(print,data.table)
+export(autokey)
+export(autokeys)
 export(keysfirst)
 export(merge0)
 export(pageDT)
+export(set_autokeys)
 export(tb)
-import(data.table)
 import(dplyr)
