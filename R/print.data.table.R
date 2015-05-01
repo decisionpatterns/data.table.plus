@@ -1,6 +1,6 @@
 #' print.data.table
 #'
-#' Extends \code{\link[data.table]{print}} by printing x followed by its key
+#' Extends \code{print.data.table} by printing x followed by its key.
 #'
 #' @param x data.table
 #' @param ... arguments passed to
@@ -22,7 +22,7 @@
 
 print.data.table <- function( x, ... ) {
 
-  data.table:::print.data.table( x=x,  ... )
+  `data.table`:::print.data.table( x=x,  ... )
   message( paste( "key :", paste0( data.table::key(x), collapse = ", ")) )
 
   invisible()

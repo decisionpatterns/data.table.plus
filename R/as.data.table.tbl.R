@@ -5,15 +5,7 @@
 #' @import dplyr
 #' @export
 
-as.data.table.tbl <- function(x) {
- setDT( as.data.frame.tbl(x) )
+as.data.table.tbl <- function(x, keep.rownames=FALSE ) {
+ setDT( dplyr::as.data.frame.tbl(x) )
  return(x)
 }
-
-
-# as.data.table.tbl <- function(x) {
-#   class(x) <- c('data.table','data.frame')
-#   x
-# }
-
-

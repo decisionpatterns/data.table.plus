@@ -15,7 +15,7 @@
 NONE, used for side effects only
 }
 \description{
-Extends \code{\link[data.table]{print}} by printing x followed by its key
+Extends \code{print.data.table} by printing x followed by its key.
 }
 \examples{
 data(iris)

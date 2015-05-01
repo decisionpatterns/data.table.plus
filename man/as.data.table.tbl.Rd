@@ -4,7 +4,7 @@
 \alias{as.data.table.tbl}
 \title{Convert a dplyr table to a data.table by stripping the dplyr classes}
 \usage{
-\method{as.data.table}{tbl}(x)
+\method{as.data.table}{tbl}(x, keep.rownames = FALSE)
 }
 \arguments{
 \item{x}{dplyr tbl object}

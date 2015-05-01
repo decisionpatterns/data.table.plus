@@ -1,4 +1,4 @@
 library(testthat)
-library(data.table.tools)
+library(data.table.plus)
 
-test_check("data.table.tools")
+test_check("data.table.plus")
