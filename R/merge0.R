@@ -12,6 +12,7 @@
 #'   \dontrun{
 #'     merge0( iris, iris[,-3])
 #'   }
+#' @import na.actions
 #' @export
 
 merge0 <- function( x, y, default=0, ... ) {

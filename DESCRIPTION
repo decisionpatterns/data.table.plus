@@ -1,7 +1,7 @@
 Package: data.table.plus
 Title: Extensions and utilities for data.tables
-Version: 0.2.1
-Date: 2015-05-01
+Version: 0.2.2
+Date: 2015-10-12
 Authors@R: "Christopher Brown <chris.brown@decisionpattenrs.com> [aut, cre]"
 Description: Useful utilities for working with data.tables
 Depends:
@@ -9,7 +9,8 @@ Depends:
     data.table (>= 1.9.4)
 License: Decision Patterns Client License
 Imports:
-    dplyr
+    dplyr,
+    na.actions (>= 0.3.5)
 LazyData: true
 Suggests:
     testthat,
