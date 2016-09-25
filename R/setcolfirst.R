@@ -26,6 +26,4 @@ setcolfirst <- function(x, firstcols) {
 
   setcolorder(x,neworder)
 
-  return(x)
-
 }
