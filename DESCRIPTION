@@ -1,7 +1,7 @@
 Package: data.table.plus
 Title: Extensions and Utilities for 'data.table'
-Version: 0.2.4
-Date: 2017-01-04
+Version: 0.2.5
+Date: 2017-01-09
 Authors@R: "Christopher Brown <chris.brown@decisionpattenrs.com> [aut, cre]"
 Description: This package contains useful utilities for working with
     data.tables. These functions probabably should be included in the data.table

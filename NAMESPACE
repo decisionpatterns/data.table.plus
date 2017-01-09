@@ -2,6 +2,7 @@
 
 S3method(as.data.table,tbl)
 S3method(print,data.table)
+export("``")
 export(autokey)
 export(autokeys)
 export(keysfirst)
