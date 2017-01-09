@@ -13,7 +13,7 @@
 #' Does not take mu
 #' Made with pipes in mind.
 #'
-#' @export``
+#' @export
 
 renameif <- function(x,old,new) {
   if( old %in% names(x) )
