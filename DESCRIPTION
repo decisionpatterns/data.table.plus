@@ -18,3 +18,4 @@ Suggests:
     testthat,
     magrittr
 RoxygenNote: 5.0.1
+Repository: CRAN
