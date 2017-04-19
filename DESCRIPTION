@@ -14,7 +14,7 @@ Imports:
     dplyr,
     na.actions (>= 0.3.5), 
     lazyeval (>= 0.2.0), 
-    stringr (>= 1,2.0)
+    stringr (>= 1.2.0)
 LazyData: true
 Suggests:
     testthat,
