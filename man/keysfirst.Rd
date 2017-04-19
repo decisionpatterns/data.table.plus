@@ -26,4 +26,3 @@ data.table names with the keys expressed fist
 \code{\link[base]{names}}
   \code{\link[data.table]{key}}
 }
-

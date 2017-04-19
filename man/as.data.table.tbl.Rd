@@ -14,4 +14,3 @@
 \description{
 Convert a dplyr table to a data.table by stripping the dplyr classes
 }
-

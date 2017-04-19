@@ -21,7 +21,11 @@ variables where the join is unequal.
 }
 \examples{
   \dontrun{
+    data(iris)
+    setDT(iris)
     merge0( iris, iris[,-3])
   }
 }
-
+\seealso{
+`left_join`
+}

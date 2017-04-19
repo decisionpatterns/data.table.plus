@@ -35,11 +35,10 @@ TODO
   }
 
 }
-\author{
-Christopher Brown
-}
 \seealso{
 \code{\link[base]{browser}}
   \code{\link[base]{readline}}
 }
-
+\author{
+Christopher Brown
+}

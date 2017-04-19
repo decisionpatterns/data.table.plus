@@ -27,4 +27,3 @@ nonkey(iris)
 setkey( iris, Species, Sepal.Length )
 
 }
-

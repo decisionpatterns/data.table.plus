@@ -27,4 +27,3 @@ Extends \code{print.data.table} by printing x followed by its key.
   print(iris)
 
 }
-

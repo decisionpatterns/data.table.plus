@@ -9,4 +9,3 @@ tb()
 \description{
 Shows compact data.table info
 }
-

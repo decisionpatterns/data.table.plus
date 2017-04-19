@@ -2,8 +2,8 @@
 % Please edit documentation in R/autokey.R
 \name{autokey}
 \alias{autokey}
-\alias{autokeys}
 \alias{set_autokeys}
+\alias{autokeys}
 \title{Automatically set data.table keys}
 \usage{
 autokey(x, keys = getOption("autokey"))
@@ -47,4 +47,3 @@ Simple wrapper of \code{getOption('autokey')}
 \seealso{
 \code{setkeyv} in the \code{data.table} package.
 }
-

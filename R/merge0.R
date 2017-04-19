@@ -8,8 +8,13 @@
 #' @param default value used where records between tables do not match
 #' @param ... additional arguments passed to other functions
 #'
+#' @seealso
+#'   `left_join`
+#'
 #' @examples
 #'   \dontrun{
+#'     data(iris)
+#'     setDT(iris)
 #'     merge0( iris, iris[,-3])
 #'   }
 #' @import na.actions
