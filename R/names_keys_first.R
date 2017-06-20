@@ -1,6 +1,6 @@
-#' keysfirst
+#' names_keys_first
 #'
-#'  data.table names with the keys expressed fist
+#' data.table names with the keys expressed first
 #'
 #' @param data data to return
 #'
@@ -13,12 +13,15 @@
 #'
 #' @examples
 #'   \dontrun{
-#'     dt %>% setcolorder( keysfirst(dt))
+#'     dt %>% setcolorder( keysfirst(dt) )
 #'   }
-#'
-# @import data.table
 #'
 #' @export
 
-keysfirst <- function( data )
+names_keys_first <- function( data )
   c( key(data), names(data) ) %>% unique
+
+#' @export
+#' @rdname names_keys_first
+
+ keysfirst  <- names_keys_first

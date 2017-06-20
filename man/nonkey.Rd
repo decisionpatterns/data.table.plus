@@ -2,9 +2,12 @@
 % Please edit documentation in R/nonkey.R
 \name{nonkey}
 \alias{nonkey}
+\alias{nonkeys}
 \title{Get non-keys from a table}
 \usage{
 nonkey(x)
+
+nonkeys(x)
 }
 \arguments{
 \item{x}{a data set that may have a key}

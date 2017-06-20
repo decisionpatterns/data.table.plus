@@ -21,3 +21,8 @@
 #' @export
 
 nonkey <- function(x) setdiff( names(x), data.table::key(x))
+
+
+#' @rdname nonkey
+#' @export
+nonkeys <- nonkey

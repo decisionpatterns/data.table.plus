@@ -1,3 +1,6 @@
+# Added to make nice with devtools
+.datatable.aware=TRUE
+
 .onAttach <- function( libname, pkgname ) {
 
   suppressWarnings( try( v <- utils::packageVersion(pkgname, libname), silent = TRUE ))

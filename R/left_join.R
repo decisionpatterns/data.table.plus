@@ -23,17 +23,18 @@
 #'  data.table:::`[.data.table`(x,rhs)      # RIGHT JOIN
 #'
 #'  options( datatable.default.left.join = FALSE )
-#'  x[rhs, on=.(letters)]                     # LHS JOIN
+#'  x[rhs, on=.(letters)]                     # RIGHT JOIN
 #'  options( datatable.default.left.join = TRUE )
 #'  x[rhs, on=.(letters)]
 #'
 #' @rdname left_join
+#' @exportMethod [
 #' @export
 
-"[.data.table" <- function (x, i, ...) {
+"[.data.tableoff" <- function (x, i, ...) {
 
   if( getOption( "datatable.default.left.join", FALSE )  ) {
-
+    browser()
   # Swap x <-> i
     if( is.data.table(i) ) {
       x. <- i
@@ -44,8 +45,10 @@
     prefix_replace(dt, "i", lazyeval::expr_text(i) )
 
   } else {
+
     dt <- data.table:::`[.data.table`(x, i, ...)
   }
 
   dt
 }
+
