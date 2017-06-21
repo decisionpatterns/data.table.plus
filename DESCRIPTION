@@ -1,6 +1,6 @@
 Package: data.table.plus
 Title: Extensions and Utilities for 'data.table'
-Version: 0.3.3
+Version: 0.3.4
 Date: 2017-06-20
 Authors@R: "Christopher Brown <chris.brown@decisionpattenrs.com> [aut, cre]"
 Description: This package contains useful utilities for working with
@@ -14,7 +14,8 @@ Imports:
     dplyr,
     na.actions (>= 0.3.5), 
     lazyeval (>= 0.2.0), 
-    stringr (>= 1.2.0)
+    stringr (>= 1.2.0),
+    stringr.tools (>= 0.1.6)
 LazyData: true
 Suggests:
     testthat,
