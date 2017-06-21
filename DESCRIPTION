@@ -1,6 +1,6 @@
 Package: data.table.plus
 Title: Extensions and Utilities for 'data.table'
-Version: 0.3.4
+Version: 0.3.4.1
 Date: 2017-06-20
 Authors@R: "Christopher Brown <chris.brown@decisionpattenrs.com> [aut, cre]"
 Description: This package contains useful utilities for working with
@@ -22,3 +22,4 @@ Suggests:
     magrittr
 RoxygenNote: 6.0.1.9000
 Repository: CRAN
+  

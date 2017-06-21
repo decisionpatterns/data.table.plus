@@ -27,7 +27,7 @@ setprefix <- function(x,old,new) {
   old_regex <- paste0("^",old)
   old_names <- names(x) %>% str_grep( old_regex )
 
-  new_names <- names(x) %>% str_replace( old_regex, new  )
+  new_names <- old_names(x) %>% str_replace( old_regex, new  )
   setnames(x,old_names,new_names )
 
   invisible(x)
