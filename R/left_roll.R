@@ -5,6 +5,7 @@
 #' @param x, y data.table
 #' @param on character vector of join columns. The last is the join column
 #' @param roll direction and allowed size of the roll. see ?data.table.
+#' @param ... additional arguments passed to \code{\link{setprefix}} (unimplemented)
 #'
 #' @author Decision Patterns
 #'
@@ -30,6 +31,7 @@
 #' a data.table object with
 #'
 #' @seealso
+#'   \code{\link{setprefix}}
 #'   \code{\link[dplyr]{left_join}},
 #'   \cpde{\link[data.table]{[.data.table]}}
 #'
@@ -63,7 +65,6 @@
 #'
 #' @export
 
-
 left_roll <- function(x, y, on, roll, ... ) {
 
   roll_col <- on[ length(on) ]
@@ -92,6 +93,8 @@ left_roll <- function(x, y, on, roll, ... ) {
 
   ## Reorder cols
   setcolfirst(ret, intersect( names(x), names(ret) ) )  # RETAIN ORDER
+
+  ## setpredix(?)
 
   ret
 

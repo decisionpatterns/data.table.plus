@@ -12,6 +12,8 @@ left_roll(x, y, on, roll, ...)
 \item{on}{character vector of join columns. The last is the join column}
 
 \item{roll}{direction and allowed size of the roll. see ?data.table.}
+
+\item{...}{additional arguments passed to \code{\link{setprefix}} (unimplemented)}
 }
 \value{
 a data.table object with
@@ -66,7 +68,8 @@ ret[ letter=="b"]; x[letter=="b"]; y[ letter=="b"]
 
 }
 \seealso{
-\code{\link[dplyr]{left_join}},
+\code{\link{setprefix}}
+  \code{\link[dplyr]{left_join}},
   \cpde{\link[data.table]{[.data.table]}}
 }
 \author{
