@@ -1,3 +1,8 @@
+## Version 0.4.0 
+
+ - Update .onAttach
+ - Change dependency **na.actions** -> **na.tools**
+
 ## Version 0.3.2 
 
  - Add `setkeysfirst`

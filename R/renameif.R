@@ -13,9 +13,13 @@
 #' Does not take mu
 #' Made with pipes in mind.
 #'
+#' @seealso 
+#'  * [dplyr::rename()]
+#'
 #' @export
 
 renameif <- function(x,old,new) {
   if( old %in% names(x) )
     setnames(x,old,new)
+  invisible(x)
 }

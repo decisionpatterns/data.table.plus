@@ -22,3 +22,6 @@ Renames a column on the condition that it exists
 Does not take mu
 Made with pipes in mind.
 }
+\seealso{
+* [dplyr::rename()]
+}

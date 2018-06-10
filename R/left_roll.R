@@ -15,12 +15,12 @@
 #'
 #' ## Duplicated y's
 #'
-#' 1. It is often expected that \code{nrow(results)} equals
-#' \code{nrow(x)}. This is not true when are duplicated rows in y; it maybe important to
+#' 1. It is often expected that `nrow(results)` equals
+#' `nrow(x)`. This is not true when are duplicated rows in y; it maybe important to
 #' the application to dedupe the rows of y before joining?
 #'
 #' 2. When deduping y, ensure that you are taking the correct duplicate.
-#' \code{unique} retains the first occerence.
+#' `unique`` retains the first occerence.
 #'
 #' @note
 #'  - The name `roll` comes from the data.table/ts rolling joins
@@ -31,9 +31,9 @@
 #' a data.table object with
 #'
 #' @seealso
-#'   \code{\link{setprefix}}
-#'   \code{\link[dplyr]{left_join}},
-#'   \cpde{\link[data.table]{[.data.table]}}
+#'  * [setprefix]
+#'  * [dplyr::left_join()]
+#'  * `data.table::[.data.table`
 #'
 #' @examples
 #'

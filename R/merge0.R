@@ -17,7 +17,7 @@
 #'     setDT(iris)
 #'     merge0( iris, iris[,-3])
 #'   }
-#' @import na.actions
+#' @import na.tools
 #' @export
 
 merge0 <- function( x, y, default=0, ... ) {

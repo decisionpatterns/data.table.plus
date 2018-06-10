@@ -6,15 +6,18 @@
   suppressWarnings( try( v <- utils::packageVersion(pkgname, libname), silent = TRUE ))
   version <- if( exists('v') ) paste0("-", v ) else ""
 
+  dt <- read.dcf( system.file("DESCRIPTION", package = pkgname ), "Date" )
+  yr <- substr(dt,1,4)
+
   if( interactive() )
     packageStartupMessage(
-      pkgname ,
-      version ,
-      " - Copyright \u00a9 ", substr(Sys.Date(),1,4),
-      " Decision Patterns" ,
-      domain = NA
+        pkgname
+      , version
+      , ifelse( ! is.na(dt), paste0(' (',dt,')'), '' )
+      , " - Copyright \u00a9 ", ifelse(! is.na(yr), yr, '')
+      , " Decision Patterns"
+      , domain = NA
     )
-
 
 }
 

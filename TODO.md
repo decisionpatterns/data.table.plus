@@ -1,5 +1,7 @@
 
 ## TODO
+ 
+- [ ] Use mardown with roxygen
 
 - [ ] `[set_]col_order` function instead of setcolfirst; should:
   - support partial list of columns 
