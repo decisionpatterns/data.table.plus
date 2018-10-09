@@ -1,29 +1,21 @@
 #' Move columns to the beginning
 #'
 #' @param a data.table
-#' @param firstcols vector; character (names of columns) integer
+#' @param first vector; character (names of columns) integer
 #'   (column numbers)
 #'
 #' @examples
-#'
 #'   data(iris)
 #'   setDT(iris)
 #'
 #'   setcolfirst(iris,"Species")
 #'
-#'
 #' @export
 
-setcolfirst <- function(x, firstcols) {
+setcolfirst <- function(x, first) {
 
-  if( is.integer(firstcols) ) {
-    cols <- 1:ncol(x)
-  } else {
-    cols <- names(x)
-  }
+  .Deprecated("`data.table::setcolorder()`", "data.table.plus")
 
-  neworder <- c( firstcols, setdiff(cols, firstcols))
-
-  setcolorder(x,neworder)
+  setcolorder(x, first)
 
 }

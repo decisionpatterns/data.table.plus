@@ -1,3 +1,13 @@
+## Version 0.4.1
+
+ - Steal `data.table:::print.data.table()` 
+   - Change `cat` to `message` for displaying keys
+   - Add keys to bottom of `print` as well
+   - Always display keys at bottom if options( data.table.print.keys )
+ - Set defaults in zzz.R
+   - options( datatable.print.keys=TRUE, datatable.print.class=TRUE )
+ - Soft deprecate `setcolfirst` to use native `setcolorder` 
+ 
 ## Version 0.4.0 
 
  - Update .onAttach
