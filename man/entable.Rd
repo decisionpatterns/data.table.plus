@@ -2,22 +2,30 @@
 % Please edit documentation in R/entable.R
 \name{entable}
 \alias{entable}
-\title{Convert vectors to data frames and vice versa}
+\title{Convert vectors to data tables and vice versa}
 \usage{
-entable(x, name = ".key", value = as.character(substitute(x)))
+entable(x, key = ".key", value = as.character(substitute(x)))
 }
 \arguments{
-\item{x}{atomic vector (named)}
+\item{x}{atomic vector}
 
-\item{name, value}{Names of the columns that store the names and values.
-If `name` is `NULL`, a one-column tibble is returned; `value` cannot be `NULL`.}
+\item{key, value}{Names of the columns that store the keys and values.}
 }
 \value{
-A [data.table] with two columns (if `name` is not `NULL`, the default)
-  or one column (otherwise).#'
+A one or two column [data.table] with a key on the first column.
 }
 \description{
-Convert vectors to data frames and vice versa
+Convert vectors to data tables and vice versa
+}
+\details{
+`entable` converts a data.table from an atomic vector. The vector becomes a
+table column named `value` which, by default, is named after `x`.
+
+ If the vector is named, a two-column data table is produced. The first
+ column is the names of x and is named by the `key` argument. The key
+ defaults to `.key`.
+
+ A key is created for the first column.
 }
 \examples{
   x = 1:3
@@ -30,5 +38,6 @@ Convert vectors to data frames and vice versa
 
 }
 \seealso{
-`tibble::enframe()`
+- [data.table::setkey()]
+  - `tibble::enframe()` - from which this function is loosely inspired.
 }

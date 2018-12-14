@@ -4,10 +4,10 @@
 \alias{setcolfirst}
 \title{Move columns to the beginning}
 \usage{
-setcolfirst(x, firstcols)
+setcolfirst(x, first)
 }
 \arguments{
-\item{firstcols}{vector; character (names of columns) integer
+\item{first}{vector; character (names of columns) integer
 (column numbers)}
 
 \item{a}{data.table}
@@ -16,11 +16,9 @@ setcolfirst(x, firstcols)
 Move columns to the beginning
 }
 \examples{
-
   data(iris)
   setDT(iris)
 
   setcolfirst(iris,"Species")
-
 
 }
