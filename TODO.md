@@ -1,9 +1,9 @@
 
 ## TODO
  
-- [ ] Use mardown with roxygen
+- [x] Use mardown with roxygen
 
-- [ ] `[set_]col_order` function instead of setcolfirst; should:
+- [x] `[set_]col_order` function instead of setcolfirst; should:
   - support partial list of columns 
   - allow placing at from or back
   - allow SE or NSE

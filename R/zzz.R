@@ -19,5 +19,8 @@
       , domain = NA
     )
 
+  # Set up defaults
+  options( datatable.print.keys=TRUE, datatable.print.class=TRUE )
+
 }
 

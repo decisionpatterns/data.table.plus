@@ -4,7 +4,12 @@
 \alias{print.data.table}
 \title{print.data.table}
 \usage{
-\method{print}{data.table}(x, ...)
+\method{print}{data.table}(x, topn = getOption("datatable.print.topn"),
+  nrows = getOption("datatable.print.nrows"),
+  class = getOption("datatable.print.class"),
+  row.names = getOption("datatable.print.rownames"),
+  col.names = getOption("datatable.print.colnames"),
+  print.keys = getOption("datatable.print.keys"), quote = FALSE, ...)
 }
 \arguments{
 \item{x}{data.table}
@@ -17,6 +22,10 @@ NONE, used for side effects only
 \description{
 Extends \code{print.data.table} by printing x followed by its key.
 }
+\details{
+This is just a copy of [data.table:::print.data.table()] that uses a message
+[keys_msg()] to display the keys when printed.
+}
 \examples{
   data(iris)
   setDT(iris)
@@ -26,4 +35,10 @@ Extends \code{print.data.table} by printing x followed by its key.
   setkey(iris, Species )
   print(iris)
 
+  iris[ , rn := 1 ]
+
+
+}
+\references{
+[data.table:::print.data.table()]
 }
