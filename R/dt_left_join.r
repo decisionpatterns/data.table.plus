@@ -36,7 +36,8 @@ dt_left_join <- function( x, y, by, ... ) {
   ret <- y[ x, on=by, ...]
 
   ## Reorder cols
-  setcolfirst(ret, intersect( names(x), names(ret) ) )  # RETAIN ORDER
+  setcolorder(ret, intersect( names(x), names(ret) ) )  # RETAIN ORDER
 
   ret
+
 }

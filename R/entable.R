@@ -25,9 +25,7 @@
 #'   entable(x)
 #'   names(x) <- letters[x]
 #'   entable(x)
-#'   entable(x, name="letter")
-#'
-#'   entable(x)
+#'   entable(x, key="letter")
 #'
 #' @export
 
@@ -48,4 +46,5 @@ entable <- function(x, key = ".key", value=as.character(substitute(x)) ) {
 
   setkeyv(dt, names(dt)[[1]] )
   dt
+
 }
