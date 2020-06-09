@@ -15,7 +15,7 @@
 implements a default left join for data.table
 }
 \details{
-By convention DT implements `DT[X]` as a RIGHT JOIN. This convention promotes
+By convention DT implements \code{DT[X]} as a RIGHT JOIN. This convention promotes
 facts, i.e. the most quickly varying values to be on the RHS of the result.
 This is anathema to the convention of modeling where the Y's are expressed
 first.

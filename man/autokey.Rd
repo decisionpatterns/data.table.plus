@@ -6,7 +6,7 @@
 \alias{autokeys}
 \title{Automatically set data.table keys}
 \usage{
-autokey(x, keys = getOption("autokey"))
+autokey(x, keys = getOption("datatable.autokey"))
 
 set_autokeys(cols)
 
@@ -18,7 +18,7 @@ autokeys()
 \item{keys}{character; the values to set for keys if present in \code{dt}.
 
 \code{autokey} sets the keys for a data.table. The default is to look at the
-\code{getOption('autokey')} for the list available keys. It is equivalent
+\code{getOption('datatable.autokey')} for the list available keys. It is equivalent
 to setting the \code{cols} argument of \code{setkeyv} equivalent to:
 
 \code{ intersect( names(x), getOption('autokey') ) }}
@@ -35,7 +35,7 @@ Set the column for autokeys
 Get the vector of autokeys
 }
 \details{
-Simple wrapper of \code{getOption('autokey')}
+Simple wrapper of \code{getOption('datatable.autokey')}
 }
 \examples{
   options( autokey='Species' )

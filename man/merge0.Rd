@@ -27,5 +27,5 @@ variables where the join is unequal.
   }
 }
 \seealso{
-`left_join`
+\code{left_join}
 }

@@ -12,32 +12,32 @@ entable(x, key = ".key", value = as.character(substitute(x)))
 \item{key, value}{Names of the columns that store the keys and values.}
 }
 \value{
-A one or two column [data.table] with a key on the first column.
+A one or two column \link{data.table} with a key on the first column.
 }
 \description{
 Convert vectors to data tables and vice versa
 }
 \details{
-`entable` converts a data.table from an atomic vector. The vector becomes a
-table column named `value` which, by default, is named after `x`.
+\code{entable} converts a data.table from an atomic vector. The vector becomes a
+table column named \code{value} which, by default, is named after \code{x}.
 
- If the vector is named, a two-column data table is produced. The first
- column is the names of x and is named by the `key` argument. The key
- defaults to `.key`.
+If the vector is named, a two-column data table is produced. The first
+column is the names of x and is named by the \code{key} argument. The key
+defaults to \code{.key}.
 
- A key is created for the first column.
+A key is created for the first column.
 }
 \examples{
   x = 1:3
   entable(x)
   names(x) <- letters[x]
   entable(x)
-  entable(x, name="letter")
-
-  entable(x)
+  entable(x, key="letter")
 
 }
 \seealso{
-- [data.table::setkey()]
-  - `tibble::enframe()` - from which this function is loosely inspired.
+\itemize{
+\item \code{\link[data.table:setkey]{data.table::setkey()}}
+\item \code{tibble::enframe()} - from which this function is loosely inspired.
+}
 }

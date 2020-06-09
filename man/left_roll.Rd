@@ -23,20 +23,22 @@ Perform rolling join
 }
 \details{
 It is best to think of x as the m
-
-## Duplicated y's
-
-1. It is often expected that `nrow(results)` equals
-`nrow(x)`. This is not true when are duplicated rows in y; it maybe important to
+\subsection{Duplicated y's}{
+\enumerate{
+\item It is often expected that \code{nrow(results)} equals
+\code{nrow(x)}. This is not true when are duplicated rows in y; it maybe important to
 the application to dedupe the rows of y before joining?
-
-2. When deduping y, ensure that you are taking the correct duplicate.
+\item When deduping y, ensure that you are taking the correct duplicate.
 `unique`` retains the first occerence.
 }
+}
+}
 \note{
-- The name `roll` comes from the data.table/ts rolling joins
- - `zip` is also an interesting name -- zipping on a fields with
-   `roll` telling what to do first
+\itemize{
+\item The name \code{roll} comes from the data.table/ts rolling joins
+\item \code{zip} is also an interesting name -- zipping on a fields with
+\code{roll} telling what to do first
+}
 }
 \examples{
 
@@ -68,9 +70,11 @@ ret[ letter=="b"]; x[letter=="b"]; y[ letter=="b"]
 
 }
 \seealso{
-* [setprefix]
- * [dplyr::left_join()]
- * `data.table::[.data.table`
+\itemize{
+\item \link{setprefix}
+\item \code{\link[dplyr:left_join]{dplyr::left_join()}}
+\item \verb{data.table::[.data.table}
+}
 }
 \author{
 Decision Patterns

@@ -26,7 +26,9 @@ Convenience function for replacing prefixes
 
 }
 \seealso{
-- `dp.misc::prefix`
- - `base.tools::nm_prefix`
- - `stringr.tools::str_prefix`
+\itemize{
+\item \code{dp.misc::prefix}
+\item \code{base.tools::nm_prefix}
+\item \code{stringr.tools::str_prefix}
+}
 }

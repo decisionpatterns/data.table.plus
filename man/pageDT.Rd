@@ -11,11 +11,11 @@ pageDT(x, by = key(x))
 
 \item{by}{character containing column names of x that should be paged through
 
-pageDT allows the user to interacitvely page through a data.table stepping 
-through by the values of a key.   
+pageDT allows the user to interacitvely page through a data.table stepping
+through by the values of a key.
 
 The commands generally follow those of \code{\link[base]{browser}}
-n - next key 
+n - next key
 Q - quit}
 }
 \description{
@@ -23,7 +23,9 @@ page through a data.table by key
 }
 \note{
 TODO
-  - remove key columns
+\itemize{
+\item remove key columns
+}
 }
 \examples{
   
@@ -37,7 +39,7 @@ TODO
 }
 \seealso{
 \code{\link[base]{browser}}
-  \code{\link[base]{readline}}
+\code{\link[base]{readline}}
 }
 \author{
 Christopher Brown

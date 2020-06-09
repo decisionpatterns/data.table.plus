@@ -10,7 +10,7 @@ dropicols(x)
 \item{x}{data.table}
 }
 \description{
-Drop columns prefixed by `i.*` these may be remenants of a join.
+Drop columns prefixed by \verb{i.*} these may be remenants of a join.
 }
 \details{
 During a merge/join matching columns in the two merge tables get a prefix.

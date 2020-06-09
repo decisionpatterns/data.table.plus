@@ -6,7 +6,7 @@
 #' @param keys character; the values to set for keys if present in \code{dt}.
 #'
 #' \code{autokey} sets the keys for a data.table. The default is to look at the
-#' \code{getOption('autokey')} for the list available keys. It is equivalent
+#' \code{getOption('datatable.autokey')} for the list available keys. It is equivalent
 #' to setting the \code{cols} argument of \code{setkeyv} equivalent to:
 #'
 #' \code{ intersect( names(x), getOption('autokey') ) }
@@ -22,7 +22,7 @@
 #'
 #' @export
 
-  autokey <- function( x, keys=getOption('autokey') ) {
+  autokey <- function( x, keys=getOption('datatable.autokey') ) {
 
     if( data.table::is.data.table(x) )
       data.table::setkeyv( x, intersect( names(x), keys ) )
@@ -39,13 +39,13 @@
 #'
 #' @rdname autokey
 #' @export
-  set_autokeys <- function(cols) options(autokey=cols)
+  set_autokeys <- function(cols) options(datatable.autokey=cols)
 
 #' Get the autokeys
 #'
 #' Get the vector of autokeys
 #'
-#' Simple wrapper of \code{getOption('autokey')}
+#' Simple wrapper of \code{getOption('datatable.autokey')}
 #' @rdname autokey
 #' @export
-  autokeys <- function() getOption( 'autokey')
+  autokeys <- function() getOption( 'datatable.autokey')

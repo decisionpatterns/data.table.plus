@@ -23,5 +23,7 @@ Does not take mu
 Made with pipes in mind.
 }
 \seealso{
-* [dplyr::rename()]
+\itemize{
+\item \code{\link[dplyr:rename]{dplyr::rename()}}
+}
 }

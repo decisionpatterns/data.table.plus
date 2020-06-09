@@ -26,5 +26,5 @@ data.table names with the keys expressed first
 }
 \seealso{
 \code{\link[base]{names}}
-  \code{\link[data.table]{key}}
+\code{\link[data.table]{key}}
 }

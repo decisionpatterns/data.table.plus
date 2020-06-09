@@ -1,3 +1,6 @@
+## Version 0.4.2 (2020-06-09)
+ - Remove `print.data.table`; this is now similar to data.table's own function.
+
 ## Version 0.4.1
 
  - Steal `data.table:::print.data.table()` 

@@ -24,5 +24,7 @@ Convert a dplyr table to a data.table by stripping the dplyr classes
 
 }
 \seealso{
-- [tibble::as.tibble()]
+\itemize{
+\item \code{\link[tibble:as.tibble]{tibble::as.tibble()}}
+}
 }

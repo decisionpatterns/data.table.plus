@@ -3,7 +3,6 @@
 S3method("[",data.tableoff)
 S3method(as.data.table,tbl)
 S3method(prefix_replace,data.table)
-S3method(print,data.table)
 export(autokey)
 export(autokeys)
 export(by_list)

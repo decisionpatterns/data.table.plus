@@ -32,5 +32,5 @@ Reorder columns to put the key columns first.
 }
 \seealso{
 \code{\link[data.table]{key}},
-  \code{\link[data.table]{setcolorder}}
+\code{\link[data.table]{setcolorder}}
 }

@@ -12,9 +12,6 @@ names list; values are the names
 \description{
 Turn a list of variables into a by list
 }
-\note{
-belongs in data.table.plust
-}
 \examples{
 
 mpg \%>\% by_list( c("year","trans" ) )
